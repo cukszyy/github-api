@@ -19,3 +19,11 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct Home: View {
+    var body: some View {
+        VStack {
+            
+        }
+    }
+}
