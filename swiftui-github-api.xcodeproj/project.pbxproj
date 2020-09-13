@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F974C3E9250DDD19008F4007 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974C3E8250DDD19008F4007 /* Home.swift */; };
+		F97BEA0A250DD8210068772D /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97BEA09250DD8210068772D /* UserRow.swift */; };
+		F97BEA0D250DD8470068772D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97BEA0C250DD8470068772D /* LoadingView.swift */; };
 		F99EC6FB250D959D008965CF /* swiftui_github_apiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99EC6FA250D959D008965CF /* swiftui_github_apiApp.swift */; };
 		F99EC6FD250D959D008965CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99EC6FC250D959D008965CF /* ContentView.swift */; };
 		F99EC6FF250D95A0008965CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99EC6FE250D95A0008965CF /* Assets.xcassets */; };
@@ -14,8 +17,8 @@
 		F99EC70D250D95A1008965CF /* swiftui_github_apiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99EC70C250D95A1008965CF /* swiftui_github_apiTests.swift */; };
 		F99EC718250D95A1008965CF /* swiftui_github_apiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99EC717250D95A1008965CF /* swiftui_github_apiUITests.swift */; };
 		F99EC727250DCECB008965CF /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F99EC726250DCECB008965CF /* SDWebImageSwiftUI */; };
-		F99EC72C250DCF6A008965CF /* GIthubData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99EC72B250DCF6A008965CF /* GIthubData.swift */; };
-		F99EC72E250DD00F008965CF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99EC72D250DD00F008965CF /* HomeViewModel.swift */; };
+		F99EC72C250DCF6A008965CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99EC72B250DCF6A008965CF /* User.swift */; };
+		F99EC72E250DD00F008965CF /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99EC72D250DD00F008965CF /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F974C3E8250DDD19008F4007 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		F97BEA09250DD8210068772D /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
+		F97BEA0C250DD8470068772D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F99EC6F7250D959D008965CF /* swiftui-github-api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-github-api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99EC6FA250D959D008965CF /* swiftui_github_apiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_github_apiApp.swift; sourceTree = "<group>"; };
 		F99EC6FC250D959D008965CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,8 +54,8 @@
 		F99EC713250D95A1008965CF /* swiftui-github-apiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swiftui-github-apiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99EC717250D95A1008965CF /* swiftui_github_apiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_github_apiUITests.swift; sourceTree = "<group>"; };
 		F99EC719250D95A1008965CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F99EC72B250DCF6A008965CF /* GIthubData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIthubData.swift; sourceTree = "<group>"; };
-		F99EC72D250DD00F008965CF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F99EC72B250DCF6A008965CF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F99EC72D250DD00F008965CF /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F97BEA08250DD8050068772D /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F97BEA09250DD8210068772D /* UserRow.swift */,
+				F974C3E8250DDD19008F4007 /* Home.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		F97BEA0B250DD8370068772D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F97BEA0C250DD8470068772D /* LoadingView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		F99EC6EE250D959D008965CF = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +124,11 @@
 		F99EC6F9250D959D008965CF /* swiftui-github-api */ = {
 			isa = PBXGroup;
 			children = (
+				F97BEA0B250DD8370068772D /* Components */,
 				F99EC729250DCF17008965CF /* Model */,
 				F99EC728250DCF12008965CF /* View */,
-				F99EC72A250DCF3A008965CF /* ViewModel */,
+				F99EC6FC250D959D008965CF /* ContentView.swift */,
+				F99EC72A250DCF3A008965CF /* Controller */,
 				F99EC6FA250D959D008965CF /* swiftui_github_apiApp.swift */,
 				F99EC6FE250D95A0008965CF /* Assets.xcassets */,
 				F99EC703250D95A0008965CF /* Info.plist */,
@@ -141,7 +166,7 @@
 		F99EC728250DCF12008965CF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F99EC6FC250D959D008965CF /* ContentView.swift */,
+				F97BEA08250DD8050068772D /* HomeScreen */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -149,17 +174,17 @@
 		F99EC729250DCF17008965CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F99EC72B250DCF6A008965CF /* GIthubData.swift */,
+				F99EC72B250DCF6A008965CF /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		F99EC72A250DCF3A008965CF /* ViewModel */ = {
+		F99EC72A250DCF3A008965CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F99EC72D250DD00F008965CF /* HomeViewModel.swift */,
+				F99EC72D250DD00F008965CF /* HomeController.swift */,
 			);
-			path = ViewModel;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,10 +322,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F97BEA0A250DD8210068772D /* UserRow.swift in Sources */,
 				F99EC6FD250D959D008965CF /* ContentView.swift in Sources */,
 				F99EC6FB250D959D008965CF /* swiftui_github_apiApp.swift in Sources */,
-				F99EC72C250DCF6A008965CF /* GIthubData.swift in Sources */,
-				F99EC72E250DD00F008965CF /* HomeViewModel.swift in Sources */,
+				F99EC72C250DCF6A008965CF /* User.swift in Sources */,
+				F99EC72E250DD00F008965CF /* HomeController.swift in Sources */,
+				F97BEA0D250DD8470068772D /* LoadingView.swift in Sources */,
+				F974C3E9250DDD19008F4007 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
