@@ -13,7 +13,7 @@ struct UserRow: View {
     var user: User
     
     var body: some View {
-        HStack {
+        HStack(spacing: 15) {
             AnimatedImage(url: URL(string: user.avatar_url)!)
                 .resizable()
                 .frame(width: 50, height: 50)
@@ -21,7 +21,9 @@ struct UserRow: View {
                 .shadow(radius: 5)
             Text(user.login)
                 .fontWeight(.heavy)
+                .foregroundColor(.black)
         }
+        .padding(.vertical, 5)
     }
 }
 
