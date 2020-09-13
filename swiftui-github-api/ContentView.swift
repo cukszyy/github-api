@@ -9,21 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            Home()
+                .navigationTitle("Github Users")
+                .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-    }
-}
-
-struct Home: View {
-    var body: some View {
-        VStack {
-            
-        }
     }
 }
