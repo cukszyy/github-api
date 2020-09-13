@@ -8,15 +8,25 @@
 import SwiftUI
 
 struct LoadingView: View {
+    
+    var empty: Bool
+    var message: String?
+    
     var body: some View {
         Spacer()
-        ProgressView()
+        
+        if empty {
+            Text(message ?? "No users found")
+        } else {
+            ProgressView()
+        }
+        
         Spacer()
     }
 }
 
 struct LoadingView_Previews: PreviewProvider {
     static var previews: some View {
-        LoadingView()
+        LoadingView(empty: false, message: nil)
     }
 }
